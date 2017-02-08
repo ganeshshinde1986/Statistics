@@ -1,0 +1,125 @@
+Statistics:
+------------
+- Desciptive Statistics
+- Inferential/Predictive Statistics.
+
+1. Descriptive Statistics:
+Central Tendency of Set of numbers:
+- Average/Mean (Arithmetic) 
+
+- Median
+	- Arrange the sample values in ascending order
+	- Find the middle number in series.
+	- For odd samples median is middle value which divides the series
+	  in equal parts. 
+	- For even samples median is , mean of n/2 and n/2+1 th value.
+	
+- Mode
+	- Mode is the value in sample serise with highest frequency.
+	- If there is only one value with maximum frequency then
+	  mode is "Unimodal".
+    - If there are multiple values with maximum frequency then distribution
+	  has more than one modes.
+
+=============================================================================
+population mean vs sample mean:
+-------------------------------
+Population mean mu = Summation(X)/N    (Where N is number of population)
+Sample mean X' = Summation(X)/n  	   (Where n is number of samples)
+=============================================================================
+varaince:
+---------
+variance is a measure of dispersion.
+Population variance = (sigma)^2 = (Summation((Xi-mu)^2))/N
+
+
+Sample variance = (S)^2 = (Summation((Xi-X')^2))/(n-1)
+
+for sample variance we use (n-1) in denominator to reomve under estimation of
+population variance.
+S is unbiased estimator of sample variance.
+
+Alternate Formulas for Variance:
+
+variance = (sigma)^2 = (Summation((Xi-mu)^2))/N
+
+Summation((Xi-mu)^2 = Summation((Xi-mu)*(Xi-mu))
+					= Summation(Xi^2-2*Xi*mu + (mu)^2)
+					= Summation(Xi^2) - 2*mu*Summation(Xi) 
+					+ (mu)^2*Summation(1)
+					= Summation(Xi^2) - 2*mu*Summation(Xi) + (mu)^2*N
+					Dividing all terms by N
+					= (Summation(Xi^2)/N) - (2*mu*Summation(Xi))N + ((mu)^2*N)/N
+					=  (Summation(Xi^2)/N) - (2*mu*mu) + mu^2
+					=  (Summation(Xi^2)/N) - (2*mu^2) + mu^2
+					= (Summation(Xi^2)/N) - (mu)^2
+					
+=============================================================================
+Standard Deviation:
+-------------------
+standard deviation = sigma = SQRT(Variance)
+					       = SQRT((Summation((Xi-mu)^2))/N)
+=============================================================================
+Introduction of Random Variables:
+---------------------------------	
+- Usually donated as capital X.
+- Not just a variable. Its a function which denotes a occurence of particular event.
+- random variable quantifies a random event.
+- There are two types of random variables
+		- Discrete Random Variable (can take discrete values)
+			-X : Number facing up on a Fair dice
+		- Continuous Random Variable (can take infinite number of values)
+			-X : Rainfall in a day
+=============================================================================
+Binomial Distributions:
+If p = probability of success Then 
+ 1-p = probability of failure
+ 
+If N trials are performed then proabability of r success is given as :
+P(X = k) = nCk*p^k*(1-p)^(n-k)	
+
+expected value of a binomial distribution:
+E(X) = n*p
+
+=============================================================================
+Expected value E(X)= Summation (X*f(X))
+calculating expected value is same as calculating mean of population
+where X -> Random value
+f(X) -> Probability of occurance of x.
+
+=============================================================================
+Poisson Process:
+
+Let X = #of cars pass in an hour
+Expected value/Mean E(X) = lambda
+lambda - success in an hour
+
+f(x) = ((lambda)^x/x!)*e^(-lambda)
+
+Poisson distribution is a form of binomial ditribution,
+when no. of N approaches to infinity binomial distribution becomes poisson.
+
+=============================================================================
+Law of large numbers:
+If N reaches infinity then sample mean almost similar to population mean.
+
+=============================================================================
+Normal Distribution/Bell Curve/Gaussian Distribution:
+
+P(X) = 1/sigma(SQRT(2*pi)) * e^(-1/2*((X-mu)/sigma)^2)
+
+Empirical Rule For Normal distribution also called as 68-95-99.7 Rule.
+1 standard deviation away from mean - 68% of data points
+2 standard deviation away from mean - 95% of data points
+3 standard deviation away from mean - 99.7% of data points
+=============================================================================
+Central Limit Theorem:
+As your sample size reaches infinity(practically 30 or more than 50) then distribution of sample mean follows normal distribution.
+
+Sampling Distribution of the sample mean.
+Mean of sampling distribution of sample mean tends to equal to population mean.
+
+=============================================================================
+Standard Error:
+
+
